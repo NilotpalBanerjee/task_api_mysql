@@ -21,7 +21,7 @@ bash
 
 npm install
 Set up your MySQL database:
-sql
+SQL
 
 CREATE DATABASE task_app;
 USE task_app;
@@ -46,16 +46,13 @@ Start the server:
 
 bash
 
-node server.js
-The API will be available at http://localhost:3000.
-
 API Endpoints
 Create a new task
 POST /tasks
 
 Request Body:
 
-json
+JSON
 
 {
   "task_name": "Task Name",
@@ -63,7 +60,7 @@ json
 }
 Response:
 
-json
+JSON
 
 {
   "id": 1,
@@ -78,7 +75,7 @@ GET /tasks
 
 Response:
 
-json
+JSON
 
 [
   {
@@ -96,7 +93,7 @@ GET /tasks/:id
 
 Response:
 
-json
+JSON
 
 {
   "id": 1,
@@ -111,7 +108,7 @@ PUT /tasks/:id
 
 Request Body:
 
-json
+JSON
 
 {
   "task_name": "Updated Task Name",
@@ -120,7 +117,7 @@ json
 }
 Response:
 
-json
+JSON
 
 {
   "id": 1,
@@ -135,7 +132,7 @@ DELETE /tasks/:id
 
 Response:
 
-json
+JSON
 
 {
   "message": "Task deleted successfully"
@@ -152,7 +149,7 @@ bash
 ├── models
 │   └── taskModel.js
 ├── .env
-├── package.json
+├── package.JSON
 └── README.md
 server.js: Entry point of the application.
 db.js: Database connection setup.
